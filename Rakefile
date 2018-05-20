@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "thinkific"
   gem.homepage = "http://github.com/piousbox/thinkific"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Thin ruby wrapper around Thinkific ReSTful API. Gives you ruby objects for those https requests.}
+  gem.description = %Q{Thinkific is an online education / course management system. It has a public API. This gem wraps the API and gives you equivalent ruby objects to work with.}
   gem.email = "piousbox@vs-MacBook-Pro.local"
   gem.authors = ["v p"]
   # dependencies defined in Gemfile
