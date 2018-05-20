@@ -24,6 +24,8 @@ GEM
       oauth2 (~> 1.0)
     hashie (3.5.7)
     highline (1.7.10)
+    httparty (0.16.2)
+      multi_xml (>= 0.5.2)
     i18n (1.0.1)
       concurrent-ruby (~> 1.0)
     jeweler (2.3.9)
@@ -79,6 +81,7 @@ PLATFORMS
 
 DEPENDENCIES
   bundler
+  httparty
   jeweler (~> 2.3.9)
   rdoc (~> 3.12)
   shoulda

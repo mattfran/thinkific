@@ -30,5 +30,10 @@ new_user.update :last_name => 'Jackson'
 new_user.delete
 =end
 
+module Thinkific
+  DOMAIN = 'https://api.thinkific.com'
+end
+
+require 'thinkific/course'
 require 'thinkific/user'
 
