@@ -29,7 +29,8 @@ Gem::Specification.new do |s|
     "lib/thinkific.rb",
     "lib/thinkific/user.rb",
     "test/helper.rb",
-    "test/test_thinkific.rb"
+    "test/test_thinkific.rb",
+    "thinkific.gemspec"
   ]
   s.homepage = "http://github.com/piousbox/thinkific"
   s.licenses = ["MIT"]
