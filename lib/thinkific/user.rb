@@ -13,16 +13,21 @@ class Thinkific::User
   		result = HTTParty.get "#{Thinkific::DOMAIN}/api/public/v1/users", 
         :headers => Thinkific.headers, 
         :query => Thinkific.query.merge( :query => delta )
-    rs = JSON.parse result.body
-    return rs['items'][0]
+      rs = JSON.parse result.body
+      return rs['items'][0]
   	else
-  		raise 'not implemented'
+  		raise 'not implemented? Expecting email.'
   	end
   end
 
+  def self.create
+
   def self.all
-    puts "+++ all users"
-    raise 'not implemented'
+  	result = HTTParty.get "#{Thinkific::DOMAIN}/api/public/v1/users", 
+      :headers => Thinkific.headers, 
+      :query => Thinkific.query
+    rs = JSON.parse result.body
+    return rs['items']
   end
 
 end
