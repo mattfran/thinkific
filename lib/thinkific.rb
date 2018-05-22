@@ -48,5 +48,6 @@ module Thinkific
 end
 
 require 'thinkific/course'
+require 'thinkific/enrollment'
 require 'thinkific/user'
 
