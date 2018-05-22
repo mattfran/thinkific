@@ -1,5 +1,7 @@
+require 'httparty'
 
 class Thinkific::User
+
   def self.get id
     puts "+++ get one user"
   end

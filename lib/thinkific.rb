@@ -32,6 +32,13 @@ new_user.delete
 
 module Thinkific
   DOMAIN = 'https://api.thinkific.com'
+
+  HEADERS = {
+  	'Content-Type' => 'application/json',
+    'X-Auth-Subdomain' => THINKIFIC_SUBDOMAIN,
+    'X-Auth-API-Key' => THINKIFIC_KEY
+  }
+
 end
 
 require 'thinkific/course'
