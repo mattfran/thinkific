@@ -33,11 +33,17 @@ new_user.delete
 module Thinkific
   DOMAIN = 'https://api.thinkific.com'
 
-  HEADERS = {
-  	'Content-Type' => 'application/json',
-    'X-Auth-Subdomain' => THINKIFIC_SUBDOMAIN,
-    'X-Auth-API-Key' => THINKIFIC_KEY
-  }
+  def self.headers
+    return {
+    	'Content-Type' => 'application/json',
+      'X-Auth-Subdomain' => ::THINKIFIC_SUBDOMAIN,
+      'X-Auth-API-Key' => ::THINKIFIC_KEY
+    }
+  end
+
+  def self.query
+  	return { :limit => 10000 }
+  end
 
 end
 

@@ -4,7 +4,7 @@ class Thinkific::Course
 
   def self.all
     result = HTTParty.get "#{Thinkific::DOMAIN}/api/public/v1/courses", 
-      :headers => Thinkific::HEADERS, 
+      :headers => Thinkific.headers, 
       :query => { :limit => 10000 }
     rs = JSON.parse result.body
     return rs['items']
