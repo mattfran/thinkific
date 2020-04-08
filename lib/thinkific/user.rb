@@ -25,6 +25,7 @@ class Thinkific::User
       :first_name => customer[:first_name],
       :last_name => customer[:last_name],
       :email => customer[:email],
+      :password => customer[:password],
       :send_welcome_email => false # @TODO: should be true?
   	}
   	result = HTTParty.post "#{Thinkific::DOMAIN}/api/public/v1/users", 
