@@ -36,8 +36,8 @@ module Thinkific
   def self.headers
     return {
     	'Content-Type' => 'application/json',
-      'X-Auth-Subdomain' => ::THINKIFIC_SUBDOMAIN,
-      'X-Auth-API-Key' => ::THINKIFIC_KEY
+      'X-Auth-Subdomain' => ENV['THINKIFIC_SUBDOMAIN'],
+      'X-Auth-API-Key' => ENV['THINKIFIC_KEY']
     }
   end
 
